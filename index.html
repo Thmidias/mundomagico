@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Mágico Animações - Catálogo 2025</title>
+    <!-- Carregando Tailwind CSS para o visual -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonte Inter do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+        body { font-family: 'Inter', sans-serif; }
         .hero-section {
             background-image: linear-gradient(135deg, rgba(107, 70, 193, 0.85), rgba(183, 148, 244, 0.85)), url('https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         }
-        .category-btn {
-            transition: all 0.3s ease;
-        }
+        .category-btn { transition: all 0.3s ease; }
         .category-btn.active {
             background-color: #EC4899;
             color: white;
@@ -33,20 +31,17 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
-        .gallery-img {
-            transition: transform 0.3s ease;
-        }
-        .gallery-img:hover {
-            transform: scale(1.05);
-        }
+        .gallery-img { transition: transform 0.3s ease; }
+        .gallery-img:hover { transform: scale(1.05); }
     </style>
 </head>
 <body class="bg-purple-50">
 
-    <!-- Header -->
+    <!-- Header / Menu -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
             <div>
+                <!-- Substitua o src pela URL da sua logo se precisar -->
                 <img src="https://i.postimg.cc/gJGxzn9y/Logo-mundo-magico.png" alt="Mundo Mágico Logo" class="h-16">
             </div>
             <div class="hidden md:flex space-x-6">
@@ -55,11 +50,10 @@
                 <a href="#catalogo" class="text-gray-600 hover:text-purple-700">Catálogo</a>
                 <a href="#contato" class="text-gray-600 hover:text-purple-700">Contato</a>
             </div>
-             <button id="mobile-menu-button" class="md:hidden text-purple-700 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            <button id="mobile-menu-button" class="md:hidden text-purple-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="#sobre" class="block py-2 text-gray-600 hover:text-purple-700">Sobre Nós</a>
             <a href="#galeria" class="block py-2 text-gray-600 hover:text-purple-700">Galeria</a>
@@ -68,7 +62,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Capa) -->
     <section class="hero-section text-white text-center py-20 px-6">
         <h1 class="text-5xl font-black mb-4">Mundo Mágico Animações</h1>
         <p class="text-lg mb-6 max-w-2xl mx-auto">Com mais de 15 anos de mercado, somos especialistas em locação de brinquedos para festas.</p>
@@ -78,18 +72,18 @@
         </a>
     </section>
 
-    <!-- Sobre Nós Section -->
+    <!-- Sobre Nós -->
     <section id="sobre" class="py-16 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-purple-800 mb-12">Nossa Essência</h2>
             <div class="grid md:grid-cols-3 gap-8 text-center">
                 <div class="bg-purple-100 p-8 rounded-lg shadow-lg">
                     <h3 class="text-2xl font-bold text-purple-700 mb-4">Missão</h3>
-                    <p class="text-gray-700">Proporcionar momentos inesquecíveis de alegria e diversão para as crianças, garantindo segurança, qualidade e pontualidade em nossos serviços.</p>
+                    <p class="text-gray-700">Proporcionar momentos inesquecíveis de alegria e diversão para as crianças.</p>
                 </div>
                 <div class="bg-pink-100 p-8 rounded-lg shadow-lg">
                     <h3 class="text-2xl font-bold text-pink-700 mb-4">Visão</h3>
-                    <p class="text-gray-700">Ser referência no mercado de locação de brinquedos para festas infantis em Nova Friburgo e região, reconhecida por nosso compromisso com a segurança, inovação e excelência.</p>
+                    <p class="text-gray-700">Ser referência no mercado de locação de brinquedos para festas infantis.</p>
                 </div>
                 <div class="bg-purple-100 p-8 rounded-lg shadow-lg">
                     <h3 class="text-2xl font-bold text-purple-700 mb-4">Valores</h3>
@@ -97,53 +91,38 @@
                         <li>Segurança em primeiro lugar</li>
                         <li>Pontualidade e Compromisso</li>
                         <li>Diversão com Qualidade</li>
-                        <li>Empatia e Atendimento Humanizado</li>
-                        <li>Inovação Constante</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Galeria Section -->
+    <!-- Galeria -->
     <section id="galeria" class="py-16">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-purple-800 mb-12">Momentos Mágicos</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="overflow-hidden rounded-lg shadow-lg h-80">
-                    <img src="https://i.imgur.com/IZCtqxn.jpeg" alt="Crianças se divertindo na piscina de bolinhas" class="w-full h-full object-cover gallery-img">
-                </div>
-                <div class="overflow-hidden rounded-lg shadow-lg h-80">
-                    <img src="https://i.imgur.com/TruNE6P.jpeg" alt="Menino sorrindo em um brinquedo inflável" class="w-full h-full object-cover gallery-img">
-                </div>
-                <div class="overflow-hidden rounded-lg shadow-lg h-80">
-                    <img src="https://i.imgur.com/k9l3rzw.jpeg" alt="Crianças pulando na cama elástica" class="w-full h-full object-cover gallery-img">
-                </div>
-                 <div class="overflow-hidden rounded-lg shadow-lg h-80">
-                    <img src="https://i.imgur.com/CNqEJor.jpeg" alt="Criança brincando no touro mecânico inflável" class="w-full h-full object-cover gallery-img">
-                </div>
+                <!-- Imagens da galeria -->
+                <div class="overflow-hidden rounded-lg shadow-lg h-80"><img src="https://i.imgur.com/IZCtqxn.jpeg" class="w-full h-full object-cover gallery-img"></div>
+                <div class="overflow-hidden rounded-lg shadow-lg h-80"><img src="https://i.imgur.com/TruNE6P.jpeg" class="w-full h-full object-cover gallery-img"></div>
+                <div class="overflow-hidden rounded-lg shadow-lg h-80"><img src="https://i.imgur.com/k9l3rzw.jpeg" class="w-full h-full object-cover gallery-img"></div>
+                <div class="overflow-hidden rounded-lg shadow-lg h-80"><img src="https://i.imgur.com/CNqEJor.jpeg" class="w-full h-full object-cover gallery-img"></div>
             </div>
         </div>
     </section>
 
-    <!-- Catálogo Section -->
+    <!-- Catálogo -->
     <section id="catalogo" class="py-16 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-purple-800 mb-4">Nosso Catálogo de Brinquedos</h2>
-            <p class="text-center text-gray-600 mb-10">Filtre por categoria para encontrar o brinquedo ideal para sua festa!</p>
-
-            <!-- Category Filters -->
+            <h2 class="text-4xl font-bold text-center text-purple-800 mb-4">Nosso Catálogo</h2>
+            <p class="text-center text-gray-600 mb-10">Filtre por categoria para encontrar o brinquedo ideal!</p>
             <div id="category-filters" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
-                <!-- Filter buttons will be inserted here by JavaScript -->
+                <!-- Filtros são gerados automaticamente pelo JS -->
             </div>
-
-            <!-- Toys Grid -->
             <div id="toys-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <!-- Toy cards will be inserted here by JavaScript -->
+                <!-- Cards são gerados automaticamente pelo JS -->
             </div>
-            <p class="text-center text-gray-600 mt-12 text-sm">
-                * Valores para até 4h de aluguel. Consultar taxa de frete.
-            </p>
+            <p class="text-center text-gray-600 mt-12 text-sm">* Valores para até 4h de aluguel. Consultar taxa de frete.</p>
         </div>
     </section>
 
@@ -151,131 +130,122 @@
     <footer id="contato" class="bg-purple-900 text-white py-12">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-4">Entre em contato!</h2>
-            <p class="mb-8 max-w-lg mx-auto">Garanta sorrisos e memórias inesquecíveis para seus eventos!</p>
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8 mb-8">
-                <div class="text-lg">
-                    <span class="font-bold">Telefones:</span>
-                    <p>(22) 99969-8001</p>
-                    <p>(22) 99926-7071</p>
-                    <p>2523-6208</p>
-                </div>
-                <div class="text-lg">
-                    <span class="font-bold">Instagram:</span>
-                    <p><a href="https://www.instagram.com/mundomagico.animacoes/" target="_blank" class="hover:text-pink-300">@mundomagico.animacoes</a></p>
-                </div>
+                <div><span class="font-bold">WhatsApp:</span> (22) 99969-8001</div>
+                <div><span class="font-bold">Instagram:</span> @mundomagico.animacoes</div>
             </div>
-             <a href="https://wa.me/+5522999698001?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" class="bg-green-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-600 transition-transform transform hover:scale-105 inline-block">
-                Fale Conosco no WhatsApp
-            </a>
-            <div class="mt-10 border-t border-purple-700 pt-6">
-                <p>&copy; 2025 Mundo Mágico Animações. Todos os direitos reservados.</p>
-            </div>
+            <p>&copy; 2025 Mundo Mágico Animações.</p>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/+5522999698001?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110 z-50 flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19.05 4.94C17.22 3.11 14.71 2 12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.45 1.32 4.95L2 22l5.05-1.32c1.5.86 3.18 1.32 4.95 1.32h.01c5.52 0 10-4.48 10-10c0-2.71-1.11-5.22-2.95-7.06zM12 20.01c-1.61 0-3.14-.4-4.51-1.12l-.32-.19l-3.34.87l.89-3.26l-.21-.33c-.79-1.25-1.2-2.7-1.2-4.2C3.27 7.59 7.21 3.65 12 3.65c2.21 0 4.29.86 5.85 2.42c1.56 1.56 2.42 3.64 2.42 5.85c0 4.78-3.94 8.72-8.72 8.72zm4.3-7.53c-.27-.13-1.62-.8-1.87-.89c-.25-.09-.44-.13-.62.13c-.18.27-.71.89-.87 1.08c-.16.18-.32.21-.59.08c-.27-.13-1.14-.42-2.17-1.34c-.81-.72-1.36-1.61-1.52-1.88c-.16-.27-.02-.42.12-.55c.12-.12.27-.32.4-.42c.13-.1.18-.18.27-.3c.09-.13.04-.25-.02-.38c-.07-.13-.62-1.5-.85-2.05c-.23-.55-.45-.47-.62-.48c-.16-.01-.35-.01-.53-.01c-.18 0-.47.07-.71.32c-.25.25-.95.93-1.22 1.8c-.27.87-.98 2.05-.98 3.55c0 1.5.98 4.13 1.13 4.43c.15.3 1.95 3.01 4.74 4.21c.64.28 1.14.44 1.53.56c.56.17 1.07.15 1.48.09c.45-.06 1.62-.66 1.85-1.28c.23-.62.23-1.15.16-1.28c-.07-.13-.26-.21-.53-.34z"/>
-        </svg>
+    <!-- Botão Flutuante -->
+    <a href="https://wa.me/+5522999698001" target="_blank" class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg z-50 hover:bg-green-600 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19.05 4.94C17.22 3.11 14.71 2 12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.45 1.32 4.95L2 22l5.05-1.32c1.5.86 3.18 1.32 4.95 1.32h.01c5.52 0 10-4.48 10-10c0-2.71-1.11-5.22-2.95-7.06zM12 20.01c-1.61 0-3.14-.4-4.51-1.12l-.32-.19l-3.34.87l.89-3.26l-.21-.33c-.79-1.25-1.2-2.7-1.2-4.2C3.27 7.59 7.21 3.65 12 3.65c2.21 0 4.29.86 5.85 2.42c1.56 1.56 2.42 3.64 2.42 5.85c0 4.78-3.94 8.72-8.72 8.72zm4.3-7.53c-.27-.13-1.62-.8-1.87-.89c-.25-.09-.44-.13-.62.13c-.18.27-.71.89-.87 1.08c-.16.18-.32.21-.59.08c-.27-.13-1.14-.42-2.17-1.34c-.81-.72-1.36-1.61-1.52-1.88c-.16-.27-.02-.42.12-.55c.12-.12.27-.32.4-.42c.13-.1.18-.18.27-.3c.09-.13.04-.25-.02-.38c-.07-.13-.62-1.5-.85-2.05c-.23-.55-.45-.47-.62-.48c-.16-.01-.35-.01-.53-.01c-.18 0-.47.07-.71.32c-.25.25-.95.93-1.22 1.8c-.27.87-.98 2.05-.98 3.55c0 1.5.98 4.13 1.13 4.43c.15.3 1.95 3.01 4.74 4.21c.64.28 1.14.44 1.53.56c.56.17 1.07.15 1.48.09c.45-.06 1.62-.66 1.85-1.28c.23-.62.23-1.15.16-1.28c-.07-.13-.26-.21-.53-.34z"/></path></svg>
     </a>
 
+    <!-- LÓGICA / DADOS DOS BRINQUEDOS (AQUI É ONDE VOCÊ EDITA) -->
     <script>
-        // Toy data based on the PDF
+        // LISTA DE BRINQUEDOS
+        // Para adicionar um novo, copie um bloco {} e cole antes do fechamento ]
         const toys = [
             // TRADICIONAIS
-            { name: 'Cama Elástica', category: 'Tradicionais', img: 'https://i.imgur.com/pjhOUGh.jpeg', details: ['Pequena: 2,70m (50kg) - R$180', 'Média: 3,20m (60kg) - R$200', 'Grande: 4,30m (80kg) - R$220'], price: 'A partir de R$180' },
-            { name: 'Piscina de Bolinhas', category: 'Tradicionais', img: 'https://i.imgur.com/3aW6jyf.jpeg', details: ['Tamanho: 2m(C) x 2m(L) x 1,8m(A)', 'Faixa Etária: até 8 anos'], price: 'R$200' },
-            { name: 'Tobogã', category: 'Tradicionais', img: 'https://i.imgur.com/DgA2Nkh.jpeg', details: ['Tamanho: 5m(C) x 3m(L) x 4m(A)', 'Peso Suportado: 60kg'], price: 'R$280' },
+            { name: 'Cama Elástica', category: 'Tradicionais', img: 'https://i.imgur.com/pjhOUGh.jpeg', details: ['Pequena, Média e Grande'], price: 'A partir de R$180' },
+            { name: 'Piscina de Bolinhas', category: 'Tradicionais', img: 'https://i.imgur.com/3aW6jyf.jpeg', details: ['2m x 2m', 'Até 8 anos'], price: 'R$200' },
+            { name: 'Tobogã', category: 'Tradicionais', img: 'https://i.postimg.cc/ZqBznj6c/Toboga-novo.jpg', details: ['5m x 3m x 4m'], price: 'R$280' },
+            
             // RADICAIS
-            { name: 'Ringue de Luta', category: 'Radicais', img: 'https://i.imgur.com/DLarUXE.jpeg', details: ['Tamanho: 5m(C) x 5m(L) x 2,3m(A)', 'Faixa Etária: Crianças e Adultos'], price: 'R$350' },
-            { name: 'Touro Mecânico', category: 'Radicais', img: 'https://i.imgur.com/8A41lvI.jpeg', details: ['Tamanho: 4,5m(C) x 4,5m(L)', 'Peso Suportado: 120kg', 'Voltagem: 220v'], price: 'R$650' },
-            { name: 'Futebol de Sabão (Médio)', category: 'Radicais', img: 'https://i.imgur.com/P81U07z.jpeg', details: ['Tamanho: 8m(C) x 4,4m(L) x 2,5m(A)', 'Capacidade: 6 crianças ou 4 adultos'], price: 'R$500' },
-            { name: 'Futebol de Sabão (Grande)', category: 'Radicais', img: 'https://i.imgur.com/6j6udGW.jpeg', details: ['Tamanho: 10m(C) x 5m(L) x 2,5m(A)', 'Capacidade: 6 crianças ou 4 adultos'], price: 'R$600' },
-            { name: 'Giro Radical', category: 'Radicais', img: 'https://i.imgur.com/TIMrRal.jpeg', details: ['Tamanho: 5,5m(C) x 5,5m(L)', 'Capacidade: 4 crianças ou 2 adultos', 'Voltagem: 220v'], price: 'R$600' },
-            // PARA ESPAÇOS PEQUENOS
-            { name: 'Tombo Legal', category: 'Espaços Pequenos', img: 'https://i.imgur.com/PATL8qy.jpeg', details: ['Tamanho: 1,75m(C) x 2,2m(L) x 1,75m(A)', 'Peso Suportado: 70kg'], price: 'R$350' },
+            { name: 'Ringue de Luta', category: 'Radicais', img: 'https://i.imgur.com/DLarUXE.jpeg', details: ['5m x 5m', 'Crianças e Adultos'], price: 'R$350' },
+            { name: 'Touro Mecânico', category: 'Radicais', img: 'https://i.imgur.com/8A41lvI.jpeg', details: ['4,5m x 4,5m', '220v'], price: 'R$650' },
+            { name: 'Futebol de Sabão (Médio)', category: 'Radicais', img: 'https://i.imgur.com/P81U07z.jpeg', details: ['8m x 4,4m', '6 crianças'], price: 'R$500' },
+            { name: 'Futebol de Sabão (Grande)', category: 'Radicais', img: 'https://i.imgur.com/6j6udGW.jpeg', details: ['10m x 5m', '8 crianças'], price: 'R$600' },
+            { name: 'Giro Radical', category: 'Radicais', img: 'https://i.imgur.com/TIMrRal.jpeg', details: ['5,5m x 5,5m', '220v'], price: 'R$600' },
+            
+            // ESPAÇOS PEQUENOS
+            { name: 'Tombo Legal', category: 'Espaços Pequenos', img: 'https://i.imgur.com/PATL8qy.jpeg', details: ['Suporta 70kg'], price: 'R$350' },
             { name: 'Mesa de Totó', category: 'Espaços Pequenos', img: 'https://i.imgur.com/mY23DjK.jpeg', details: [], price: 'R$220' },
             { name: 'Air Hockey', category: 'Espaços Pequenos', img: 'https://i.imgur.com/NyfsNwe.jpeg', details: [], price: 'R$220' },
+            { name: 'Chuta e Gruda', category: 'Espaços Pequenos', img: 'https://i.postimg.cc/sxJKrTH4/chuta-e-gruda.jpg', details: ['90cm(L) x 2m(C) x 2m(A)'], price: 'R$250' },
+            
             // POCKETS
-            { name: 'Dino Play', category: 'Pockets', img: 'https://i.imgur.com/LJPlPmE.jpeg', details: ['Pula Pula, Mini Escorrega', 'Piscina de Bolinhas ou de Água', 'Tamanho: 3,5m(C) x 3,2m(L) x 2,6m(A)', 'Peso Suportado: 40kg'], price: 'R$300' },
-            { name: 'Tigre Play', category: 'Pockets', img: 'https://i.imgur.com/PqY3EkD.jpeg', details: ['Pula Pula, Mini Escorrega', 'Piscina de Bolinhas ou de Água', 'Tamanho: 3,5m(C) x 3,2m(L) x 2,5m(A)', 'Peso Suportado: 40kg'], price: 'R$300' },
-            { name: 'Fundo do Mar', category: 'Pockets', img: 'https://i.imgur.com/3LlMQZw.jpeg', details: ['Pula Pula, Mini Escorrega', 'Piscina de Bolinhas ou de Água', 'Tamanho: 3m(C) x 3,5m(L) x 2,4m(A)', 'Peso Suportado: 40kg'], price: 'R$300' },
+            { name: 'Dino Play', category: 'Pockets', img: 'https://i.imgur.com/LJPlPmE.jpeg', details: ['Pula Pula + Piscina', '3,5m x 3,2m'], price: 'R$300' },
+            { name: 'Tigre Play', category: 'Pockets', img: 'https://i.imgur.com/PqY3EkD.jpeg', details: ['Pula Pula + Piscina', '3,5m x 3,2m'], price: 'R$300' },
+            { name: 'Fundo do Mar', category: 'Pockets', img: 'https://i.imgur.com/3LlMQZw.jpeg', details: ['3m x 3,5m'], price: 'R$300' },
+            
             // LINHA MINIMALISTA
-            { name: 'Castelo Luxo', category: 'Linha Minimalista', img: 'https://i.imgur.com/oZeGTQ0.jpeg', details: ['Tamanho: 4m(C) x 3m(L) x 2,7m(A)', 'Capacidade: 2 crianças', '*Não acompanha decoração.'], price: 'R$390' },
-            { name: 'Bubble House', category: 'Linha Minimalista', img: 'https://i.imgur.com/ivOB2j7.jpeg', details: ['Tamanho: 6m(C) x 4,2m(L) x 3,3m(A)', '*Não acompanha decoração.'], price: 'R$500' },
+            { name: 'Castelo Luxo', category: 'Linha Minimalista', img: 'https://i.imgur.com/oZeGTQ0.jpeg', details: ['4m x 3m', 'Branco (Luxo)'], price: 'R$390' },
+            { name: 'Bubble House', category: 'Linha Minimalista', img: 'https://i.imgur.com/ivOB2j7.jpeg', details: ['6m x 4,2m', 'Transparente'], price: 'R$500' },
+            
             // LINHA MICKEY
-            { name: 'Clube do Mickey', category: 'Linha Mickey', img: 'https://i.imgur.com/gjtu0sl.jpeg', details: ['Pula Pula, João Teimoso', 'Tamanho: 2,9m(C) x 2,3m(L) x 2m(A)', 'Peso Suportado: 40kg'], price: 'R$200' },
-            { name: 'Mickey 3 em 1', category: 'Linha Mickey', img: 'https://i.imgur.com/DSaWhg9.jpeg', details: ['Pula Pula, Piscina de Bolinhas, Mini Escorrega', 'Tamanho: 5,4m(C) x 3,6m(L) x 3m(A)', 'Peso Suportado: 50kg'], price: 'R$350' },
+            { name: 'Clube do Mickey', category: 'Linha Mickey', img: 'https://i.imgur.com/gjtu0sl.jpeg', details: ['Pula Pula + João Teimoso'], price: 'R$200' },
+            { name: 'Mickey 3 em 1', category: 'Linha Mickey', img: 'https://i.imgur.com/DSaWhg9.jpeg', details: ['5,4m x 3,6m'], price: 'R$350' },
+            
             // MULTIATIVIDADES
-            { name: 'Vaquinha 3 em 1', category: 'Multiatividades', img: 'https://i.imgur.com/PxukNpo.jpeg', details: ['Pula Pula, Piscina de Bolinhas, Mini Escorrega', 'Tamanho: 3,6m(C) x 5,9m(L) x 3,3m(A)', 'Peso Suportado: 50kg'], price: 'R$350' },
-            { name: 'Playground 4 em 1', category: 'Multiatividades', img: 'https://i.imgur.com/oJphNEG.jpeg', details: ['Pula Pula, Piscina de Bolinhas, Tourinho Inflável, Mini Escorrega', 'Tamanho: 6m(C) x 3m(L) x 3m(A)', 'Peso Suportado: 50kg'], price: 'R$350' },
-            { name: 'Totóboga', category: 'Multiatividades', img: 'https://i.imgur.com/lZogPA4.jpeg', details: ['Escorrega, Piscina de Bolinhas', 'Tamanho: 6m(C) x 2,5m(L) x 3m(A)', 'Peso Suportado: 50kg'], price: 'R$350' },
-            { name: 'Jardim Encantado', category: 'Multiatividades', img: 'https://i.imgur.com/5Da0boT.jpeg', details: ['Mini escalada, Piscina de bolinhas, Obstáculo em zig zag, Escorrega, Túnel', 'Tamanho: 7,5m(C) x 4,3m(L) x 3,5m(A)', 'Peso Suportado: 60kg'], price: 'R$550' },
-            { name: 'Safari Play', category: 'Multiatividades', img: 'https://i.imgur.com/2fWc7NB.jpeg', details: ['Pula Pula, Parede de Escalada, Escorrega', 'Tamanho: 7m(C) x 3,7m(L) x 3,4m(A)', 'Peso Suportado: 60kg'], price: 'R$420' },
+            { name: 'Vaquinha 3 em 1', category: 'Multiatividades', img: 'https://i.imgur.com/PxukNpo.jpeg', details: ['3,6m x 5,9m'], price: 'R$350' },
+            { name: 'Playground 4 em 1', category: 'Multiatividades', img: 'https://i.imgur.com/oJphNEG.jpeg', details: ['6m x 3m'], price: 'R$350' },
+            { name: 'Totóboga', category: 'Multiatividades', img: 'https://i.imgur.com/lZogPA4.jpeg', details: ['Escorrega + Piscina'], price: 'R$350' },
+            { name: 'Jardim Encantado', category: 'Multiatividades', img: 'https://i.imgur.com/5Da0boT.jpeg', details: ['7,5m x 4,3m', 'Gigante'], price: 'R$550' },
+            { name: 'Safari Play', category: 'Multiatividades', img: 'https://i.imgur.com/2fWc7NB.jpeg', details: ['7m x 3,7m'], price: 'R$420' },
+            { name: 'Chaise 3x1', category: 'Multiatividades', img: 'https://i.postimg.cc/05T6mLwK/Whats-App-Image-2025-12-09-at-10-31-15.jpg', details: ['6m(C) x 3,5m(L) x 3,2m(A)'], price: 'R$350' },
+            
             // PARA REFRESCAR
-            { name: 'Canhão de Espuma', category: 'Para Refrescar', img: 'https://i.imgur.com/J7DHbEt.jpeg', details: [], price: 'R$450' },
-            { name: 'Splash Savana', category: 'Para Refrescar', img: 'https://i.imgur.com/O0Yup05.jpeg', details: ['Escorrega, Slide, Piscina', 'Tamanho: 8,5m(C) x 2,8m(L) x 3,3m(A)', 'Peso Suportado: 60kg'], price: 'R$480' },
-            { name: 'Tobogã 2 em 1', category: 'Para Refrescar', img: 'https://i.imgur.com/MNV2RWL.jpeg', details: ['Tamanho: 5m(C) x 3m(L) x 4,2m(A)', 'Peso Suportado: 60kg'], price: 'R$280' },
+            { name: 'Canhão de Espuma', category: 'Para Refrescar', img: 'https://i.imgur.com/J7DHbEt.jpeg', details: ['Festa da Espuma'], price: 'R$450' },
+            { name: 'Splash Savana', category: 'Para Refrescar', img: 'https://i.imgur.com/O0Yup05.jpeg', details: ['Com água'], price: 'R$480' },
+            { name: 'Tobogã 2 em 1', category: 'Para Refrescar', img: 'https://i.imgur.com/MNV2RWL.jpeg', details: ['Seco ou Molhado'], price: 'R$280' },
+            
             // BARRAQUINHAS
-            { name: 'Pipoca', category: 'Barraquinhas', img: 'https://i.imgur.com/p5x9LAq.jpeg', details: ['Eventos fechados (aniversário, casamento, chá revelação): material incluso.', 'Eventos abertos (igreja, loja, inauguração): material por conta do cliente.'], price: 'R$250' },
-            { name: 'Algodão-Doce', category: 'Barraquinhas', img: 'https://i.imgur.com/MN1KqI2.jpeg', details: ['Eventos fechados (aniversário, casamento, chá revelação): material incluso.', 'Eventos abertos (igreja, loja, inauguração): material por conta do cliente.'], price: 'R$250' },
+            { name: 'Pipoca', category: 'Barraquinhas', img: 'https://i.postimg.cc/85ZBX7Fk/freepik-recrie-o-carrinho-pipoca-img1-em-alta-definio-com-90808.jpg', details: ['Material incluso em festas fechadas'], price: 'R$250' },
+            { name: 'Algodão-Doce', category: 'Barraquinhas', img: 'https://i.postimg.cc/6pz3vnFQ/freepik-recrie-o-carrinho-algodao-doce-em-alta-definicao-c-90807.png', details: ['Material incluso em festas fechadas'], price: 'R$250' }
+            
         ];
 
-
+        // Lógica de Renderização (Não precisa mexer aqui)
         const toysGrid = document.getElementById('toys-grid');
         const categoryFilters = document.getElementById('category-filters');
-
-        // Get unique categories
+        // Obtém categorias únicas da lista acima
         const categories = ['Todos', ...new Set(toys.map(toy => toy.category))];
 
-        // Create filter buttons
+        // Cria os botões de filtro
         categories.forEach(category => {
             const button = document.createElement('button');
             button.innerText = category;
             button.className = 'category-btn bg-white text-purple-700 font-semibold py-2 px-4 rounded-full shadow hover:bg-purple-100 focus:outline-none';
-            if (category === 'Todos') {
-                button.classList.add('active');
-            }
+            if (category === 'Todos') button.classList.add('active');
             button.addEventListener('click', () => {
-                // Handle active state
                 document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
-                
                 filterToys(category);
             });
             categoryFilters.appendChild(button);
         });
 
-        // Function to display toys
+        // Mostra os brinquedos na tela
         const displayToys = (filteredToys) => {
             toysGrid.innerHTML = '';
             filteredToys.forEach(toy => {
                 const card = document.createElement('div');
                 card.className = 'toy-card bg-white rounded-lg shadow-lg overflow-hidden';
                 
-                let detailsHtml = '<div class="flex-grow min-h-[6rem]"><ul class="space-y-1 text-sm text-gray-600">';
-                toy.details.forEach(detail => {
-                    detailsHtml += `<li>- ${detail}</li>`;
-                });
+                // Gera a lista de detalhes com bullets
+                let detailsHtml = '<div class="flex-grow min-h-[4rem]"><ul class="space-y-1 text-sm text-gray-600">';
+                toy.details.forEach(detail => detailsHtml += `<li>- ${detail}</li>`);
                 detailsHtml += '</ul></div>';
                 
+                // Link dinâmico do WhatsApp
                 const whatsappLink = `https://wa.me/+5522999698001?text=Venho%20do%20catalogo%20e%20gostaria%20de%20saber%20a%20disponibilidade%20do%20brinquedo:%20${encodeURIComponent(toy.name)}`;
-
+                
                 card.innerHTML = `
                     <div>
                         <img src="${toy.img}" alt="${toy.name}" class="w-full h-56 object-contain bg-gray-100 p-2">
                         <div class="p-6 pb-0">
-                            <h3 class="text-xl font-bold text-purple-800 mb-2 min-h-[3.5rem]">${toy.name}</h3>
+                            <h3 class="text-xl font-bold text-purple-800 mb-2">${toy.name}</h3>
                             <p class="text-sm font-semibold text-pink-500 mb-4">${toy.category}</p>
                             ${detailsHtml}
                         </div>
                     </div>
-                    <div class="p-6">
-                         <div class="mt-4 pt-4 border-t">
+                    <div class="p-6 pt-2">
+                        <div class="mt-2 pt-4 border-t">
                             <p class="text-2xl font-black text-purple-700 mb-4">${toy.price}</p>
                             <a href="${whatsappLink}" target="_blank" class="flex items-center justify-center w-full text-center bg-green-500 text-white font-semibold py-3 rounded-lg hover:bg-green-600 transition-colors">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.94C17.22 3.11 14.71 2 12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.45 1.32 4.95L2 22l5.05-1.32c1.5.86 3.18 1.32 4.95 1.32h.01c5.52 0 10-4.48 10-10c0-2.71-1.11-5.22-2.95-7.06zM12 20.01c-1.61 0-3.14-.4-4.51-1.12l-.32-.19l-3.34.87l.89-3.26l-.21-.33c-.79-1.25-1.2-2.7-1.2-4.2C3.27 7.59 7.21 3.65 12 3.65c2.21 0 4.29.86 5.85 2.42c1.56 1.56 2.42 3.64 2.42 5.85c0 4.78-3.94 8.72-8.72 8.72zm4.3-7.53c-.27-.13-1.62-.8-1.87-.89c-.25-.09-.44-.13-.62.13c-.18.27-.71.89-.87 1.08c-.16.18-.32.21-.59.08c-.27-.13-1.14-.42-2.17-1.34c-.81-.72-1.36-1.61-1.52-1.88c-.16-.27-.02-.42.12-.55c.12-.12.27-.32.4-.42c.13-.1.18-.18.27-.3c.09-.13.04-.25-.02-.38c-.07-.13-.62-1.5-.85-2.05c-.23-.55-.45-.47-.62-.48c-.16-.01-.35-.01-.53-.01c-.18 0-.47.07-.71.32c-.25.25-.95.93-1.22 1.8c-.27.87-.98 2.05-.98 3.55c0 1.5.98 4.13 1.13 4.43c.15.3 1.95 3.01 4.74 4.21c.64.28 1.14.44 1.53.56c.56.17 1.07.15 1.48.09c.45-.06 1.62-.66 1.85-1.28c.23-.62.23-1.15.16-1.28c-.07-.13-.26-.21-.53-.34z"/></svg>
                                 Consultar no WhatsApp
                             </a>
                         </div>
@@ -285,27 +255,18 @@
             });
         };
 
-        // Function to filter toys
         const filterToys = (category) => {
-            if (category === 'Todos') {
-                displayToys(toys);
-            } else {
-                const filtered = toys.filter(toy => toy.category === category);
-                displayToys(filtered);
-            }
+            if (category === 'Todos') displayToys(toys);
+            else displayToys(toys.filter(toy => toy.category === category));
         };
 
-        // Initial display of all toys
+        // Inicializa mostrando todos
         displayToys(toys);
 
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        // Menu Mobile
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
         });
-        
     </script>
-
 </body>
 </html>
